@@ -19,137 +19,123 @@ export default function Decision4Page() {
 
           <div className="space-y-20 text-lg leading-[2] text-gray-900">
             
-            <p>Nobody bleeds, nobody cares.</p>
+            <p>AI projects fail most often not from bad technology but from unclear ownership. When everyone is responsible, no one is responsible. When no one is responsible, the project drifts until someone kills it or it becomes Dr. Strangebot.</p>
 
-            <p>Walk into Northern Star's main conference room. Eight people discussing the catch-up project—predictive maintenance. Seven months in. Equipment failures haven't decreased. The AI's accuracy is decent. Maintenance teams aren't using the predictions.</p>
+            <p>Here's how most organizations assign ownership: "IT will build the AI. Operations will use it. The business will sponsor it." Three groups. Zero accountability. IT builds what they think operations needs. Operations complains it doesn't work how they need it to. Business gets frustrated that money is being spent with limited results. Everyone blames everyone else. Nothing works.</p>
 
-            <p>Someone finally asks: "Who's responsible for making this work?"</p>
+            <p>Accountability requires one throat to choke. One person who can't point to someone else when the project fails. One person whose career depends on this working or knowing when to stop it.</p>
 
-            <p>Silence. Then the deflection game begins.</p>
+            <p>That's uncomfortable. Most organizations avoid it. They create steering committees, working groups, cross-functional teams. Lots of people involved. Nobody accountable. That's not governance. That's diffusion of responsibility.</p>
 
-            <p>IT director: "We built the AI. It's accurate. That's our job."</p>
+            <p>Northern Star Mining's predictive maintenance project needs an owner. Not a committee. Not "IT and Operations jointly." One person whose success or failure is tied to whether this works.</p>
 
-            <p>Operations director: "We're not technical. IT needs to make it usable."</p>
+            <p>The wrong choice: Make the IT director responsible. They build the AI. They deploy the technology. But they don't use it. They don't maintain equipment. They don't make maintenance decisions. When the AI fails to predict a crusher breakdown, IT says "the model worked as designed; operations didn't use it correctly." Operations says "the model doesn't fit our workflow; IT didn't build what we needed." Nobody is accountable for the outcome.</p>
 
-            <p>Site manager: "My teams are underwater already."</p>
+            <p>The right choice: Make the VP of Operations responsible. They use the AI. They benefit from it working. They suffer when it fails. They control resources needed to make it successful—people, processes, equipment access. They can't blame IT if it doesn't work. They own both the technology adoption and the operational outcome.</p>
 
-            <p>Finance: "We approved the budget. The team needs to execute."</p>
+            <p>But here's the trap: you can't give someone accountability without authority. The VP of Operations is accountable for predictive maintenance succeeding. But IT builds and operates the AI. If IT deprioritizes the project because they're slammed with other work, the VP of Operations has no leverage.</p>
 
-            <p>Everyone points somewhere else. Nobody owns the outcome.</p>
+            <p>Accountability without authority is a recipe for failure and resentment.</p>
 
-            <p>That's diffusion of responsibility. That's why most AI initiatives fail. Not because of technology. Because nobody bleeds if it fails.</p>
+            <p>So Northern Star does this: The VP of Operations owns the project outcome. They have budget authority to hire contractors if IT can't provide resources. They have escalation authority to the CEO if they're blocked. They control what gets built—requirements, priorities, timeline. IT provides technical expertise and execution, but the VP of Operations makes the final calls on tradeoffs.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">The Skin-in-the-Game Test</h2>
+            <p>Authority matches accountability. That's the only way accountability works.</p>
 
-            <p>Every successful AI initiative needs a sponsor who owns success and a team that does the work. Getting one right isn't enough. You need both.</p>
+            <div style={{marginTop: '50px', marginBottom: '50px'}}>
+              <p className="italic text-base leading-normal bg-gray-50 p-8 border-l-4 border-gray-300">
+                What you need to know: Authority doesn't mean "do whatever you want without consequence." It means "make decisions within defined boundaries and live with the results." The VP of Operations can decide what to build and when to stop. But they can't escape accountability by blaming someone else. That's the deal. Authority to decide. Accountability for outcomes. You can't have one without the other.
+              </p>
+            </div>
 
-            <p>But here's the test: If this project fails, who loses? Not "who's disappointed." Who actually loses—bonus, promotion, reputation, career trajectory?</p>
+            <p>Here's how organizations usually structure AI projects: Technology team builds. Business team uses. Steering committee governs. Nobody is accountable for results because accountability is distributed across multiple people who each control only part of what's needed for success.</p>
 
-            <p>If you can't name one specific person, you don't have ownership. You have a committee watching something happen.</p>
+            <p>Better structure: One owner with authority and accountability. Supporting teams with clear responsibilities but not shared ownership.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">The Sponsor: Someone Whose Career Depends on This</h2>
+            <p>Northern Star's blast optimization project is owned by the VP of Mining Operations. Not co-owned with the VP of Technology. Not governed by a steering committee of five executives. Owned. One person.</p>
 
-            <p>Northern Star's catch-up project needs a sponsor. Not someone who approves funding and disappears. Someone who owns the outcome. Someone whose bonus, whose reputation, whose next promotion depends on this working.</p>
+            <p>The VP of Mining Operations decides what success looks like. They decide how much to invest. They decide when to expand, pivot, or stop. They have a technology team supporting them. They have geologists providing expertise. But when the CEO asks "Is blast optimization working?" there's one person who answers. And if the answer is no, there's one person accountable.</p>
 
-            <p>Real sponsorship doesn't mean career suicide. It means serious commitment with real consequences.</p>
+            <p>That clarity changes everything. The VP can't say "we're learning" indefinitely. They can't blame technology teams for building the wrong thing. They can't blame geologists for not adopting it. They own the outcome.</p>
 
-            <p>For the catch-up project, Northern Star's VP of Operations is the sponsor. His annual performance goals explicitly include: "Deploy predictive maintenance across twelve sites, reduce unplanned downtime by 20%, achieve 80%+ maintenance team adoption." That's 30% of his bonus. That's 30% of his performance review. If predictive maintenance fails, his year fails.</p>
+            <p>This is what separates projects that deliver from projects that drift. Clear ownership with matching authority.</p>
 
-            <p>When maintenance teams resist—"We know our equipment, we don't need AI telling us what to do"—he doesn't delegate the conversation. He spends time with maintenance supervisors across multiple sites. Understands the resistance. Makes clear: predictive maintenance is strategic direction. We're doing this. Tell me what you need to make it work. More training? Better explanations? Different alert thresholds? But we're not debating whether.</p>
+            <p>Most organizations assign ownership to people without skin in the game. A project manager coordinates. A steering committee oversees. But nobody's compensation or promotion depends on whether this works. So nobody makes the hard decisions. Nobody kills the project when it should die. Nobody pushes through obstacles when they could.</p>
 
-            <p>When sensor upgrades come in 40% over budget, he doesn't send it back to the team to figure out. He makes the call: reallocate from another operations budget or accept reduced scope? He chooses reallocation because predictive maintenance matters more than the project he's stealing from.</p>
+            <p>Real accountability requires skin in the game. The owner's performance review reflects project outcomes. Their bonus depends on it. Their career trajectory changes based on whether this succeeds or fails. That's skin in the game.</p>
 
-            <p>That's real sponsorship. Skin in the game. Active decisions. Political capital spent.</p>
+            <p>Northern Star's remote sites project has the highest risk and highest potential reward. If it works, they operate fifteen remote sites generating $15M annually. If it fails, they wasted two years and millions of dollars.</p>
 
-            <p>Sponsorship without authority is responsibility without power. That's not leadership. That's a scapegoat.</p>
+            <p>Who owns it? Not IT. They're not operating remote sites. Not a steering committee. They're not betting their careers on this. The VP of Exploration owns it. Their job is to find and develop new mineral deposits. Remote sites are the future of their role. If this fails, their entire strategy fails. They have maximum skin in the game.</p>
 
-            <p>For the compete-better project—blast optimization—the Chief Operating Officer sponsors it personally. Why? Because improving ore recovery by 3-5% means tens of millions in additional revenue over three years. That matters at COO level. When blast engineers push back on workflow changes, the COO doesn't form a committee to study change management. He talks to engineers directly. Listens. Adjusts where possible. But makes clear: we're optimizing blasts with AI. Help shape how, but not whether.</p>
+            <p>When you give someone that much accountability, you have to give them matching authority. The VP of Exploration controls which sites to pilot, when to expand, how much to invest, and when to stop. They can hire external AI expertise if internal teams are overloaded. They can pull resources from other projects they own. They make the calls.</p>
 
-            <p>For the nobody-else-is-doing-this project—remote sites—the CEO sponsors it. Why? Because enabling fifteen million in new annual revenue from sites that currently sit idle is a board-level strategic initiative. When satellite costs spike by 60% mid-project, the CEO decides: pay more or kill the project? He pays more because the strategic value justifies it. He doesn't delegate that decision to procurement or IT. He owns it.</p>
+            <p>And if it fails, they own the failure. No excuses. No blame-shifting. That's the deal.</p>
 
-            <p>Three projects. Three sponsors. Three executives whose success depends on AI success. Not secondary metrics. Primary ones.</p>
+            <p>Most organizations can't stomach this level of accountability because failure becomes too visible. If the VP of Exploration owns remote sites and it fails, their failure is obvious. So organizations diffuse accountability to protect people from visible failure.</p>
 
-            <p>What makes sponsorship real:</p>
+            <p>Result: Nobody fails visibly. But nothing succeeds either.</p>
 
-            <p><span className="font-semibold">Skin in the game.</span> The sponsor's performance metrics include this AI initiative. Not as line item 12 of 15, but in the top 3. If the AI fails, their performance review reflects it. Their bonus reflects it. Their reputation reflects it.</p>
+            <p>The right owner for an AI project isn't the person who builds it. It's the person who benefits from it working and suffers when it doesn't. The person closest to the operational impact. The person who controls the resources needed to make it successful.</p>
 
-            <p><span className="font-semibold">Decision rights.</span> The sponsor can make resource decisions, override functional resistance, and kill the initiative if needed. They don't need six approvals. They decide.</p>
+            <p>For predictive maintenance: VP of Operations. They maintain equipment. They benefit from reduced downtime. They suffer from unexpected failures. They control maintenance teams, processes, and priorities.</p>
 
-            <p><span className="font-semibold">Active engagement.</span> The sponsor isn't briefed quarterly. They're in monthly working sessions. They know the obstacles. They make decisions in real-time, not after three weeks of escalation.</p>
+            <p>For blast optimization: VP of Mining Operations. They design blasts. They benefit from better ore recovery. They suffer from poor blast patterns. They control geologists, blast engineers, and mining processes.</p>
 
-            <p><span className="font-semibold">Political capital.</span> The sponsor spends political capital to make this work. Making enemies. Overriding objections. Forcing difficult conversations. If they're not willing to burn relationships for this, they're not a real sponsor.</p>
+            <p>For remote sites: VP of Exploration. They develop new sites. They benefit from operating previously uneconomical deposits. They suffer when remote sites can't operate profitably. They control which sites to develop and how to staff them.</p>
 
-            <p>If you can't find this person, don't start the AI initiative. Without real sponsorship, you're building Dr. Strangebot.</p>
+            <p>Same company. Three different owners. Because ownership should follow operational impact, not organizational hierarchy.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">The Team: Names, Not Titles. Time, Not Percentages.</h2>
+            <p>The wrong owners are people who "coordinate" but don't operate. Project managers coordinate. They don't maintain equipment, design blasts, or operate sites. When things go wrong, they escalate to the real decision-makers. That delay kills projects. By the time real owners hear about problems, it's often too late to fix them.</p>
 
-            <p>Who actually does the work on the catch-up project? Not "IT" or "Operations." Specific people with specific time commitments and specific trade-offs.</p>
+            <p>Right ownership means the person making daily decisions has authority to make those decisions without escalating every trade-off. They can shift priorities, reallocate resources, change direction. They don't need permission from three layers of management for every adjustment.</p>
 
-            <p>For AI development: Lead data engineer Maria is full-time for twelve months. She comes off the ERP upgrade project—that's what died to fund this, remember Decision 2. Systems engineer James works roughly three days per week for six months. He's reducing time on infrastructure work—someone else picks up his other responsibilities or those responsibilities don't get done.</p>
+            <p>Most organizations create ownership structures that require consensus for decisions. The technology team, business team, and steering committee all need to agree before anything changes. Result: nothing changes quickly enough to matter.</p>
 
-            <p>For integration: ERP specialist Tom works about two days per week for four months. Data analyst Sarah is full-time for three months during data cleanup phase, then half-time for ongoing data quality work.</p>
+            <p>Better: The owner makes decisions. Supporting teams provide input. But the owner decides. Fast. Without waiting for consensus that never comes.</p>
 
-            <p>For adoption: Change lead Karen works three days per week for twelve months. She postponed the training program redesign—that's what died to fund this.</p>
+            <div style={{marginTop: '50px', marginBottom: '50px'}}>
+              <p className="italic text-base leading-normal bg-gray-50 p-8 border-l-4 border-gray-300">
+                What you need to know: Consensus-based ownership isn't ownership. It's a way to avoid accountability by ensuring no single person makes decisions that could be wrong. But AI projects require making decisions with incomplete information under uncertainty. Waiting for consensus means waiting until it's too late. Real owners make decisions, get feedback, adjust quickly, and own the outcomes.
+              </p>
+            </div>
 
-            <p>For operations ownership: Maintenance supervisor Dave at the pilot site dedicates roughly one day per week during pilot and rollout.</p>
+            <p>Authority and accountability have to match. You can't hold someone accountable for outcomes they can't control. And you can't give someone authority without holding them accountable for how they use it.</p>
 
-            <p>Those are names. Those are real time commitments. Those are actual trade-offs. If Maria is full-time on predictive maintenance, she's not working on ERP upgrade. If James works three days per week on this, infrastructure projects slow down. If Sarah is full-time on data cleanup, she's not producing the analytics reports operations is used to getting.</p>
+            <p>Northern Star's VP of Operations is accountable for predictive maintenance. They control budget allocation for the project. They decide when to expand or stop. They can hire external expertise if internal resources are constrained. They set priorities for their maintenance teams.</p>
 
-            <p>Northern Star made these trade-offs explicitly. They communicated them. Everyone knows what died to enable this.</p>
+            <p>What they can't control: Whether IT provides data infrastructure. Whether data science teams prioritize their project. Whether other executives support or undermine the initiative.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">The Authority Question: Can They Actually Make This Happen?</h2>
+            <p>So Northern Star gives them escalation paths. If IT can't deliver infrastructure, they escalate to the CEO. If data science teams are overloaded, they have budget to hire contractors. If other executives block resources, the CEO resolves it.</p>
 
-            <p>The VP of Operations is accountable for predictive maintenance adoption across all sites. But does he have authority to mandate it? Or can site managers opt out indefinitely?</p>
+            <p>That's matched authority and accountability. The VP controls most of what's needed for success. For things outside their control, they have mechanisms to remove blockers. They're not left helpless while still being held accountable.</p>
 
-            <p>If site managers can say "not ready yet" forever, the VP doesn't really own outcomes. He owns hope.</p>
+            <p>The failure mode: giving someone accountability without removing their blockers. "You own predictive maintenance. Make it work. But you don't control IT, you can't hire externally, and you need three other executives to approve changes." That's accountability without authority. It fails.</p>
 
-            <p>Northern Star gave the VP authority. Site managers shape how adoption happens at their sites—workflows, training timing, implementation details. But whether it happens isn't up for debate. The VP mandates deployment timeline. Site managers execute within that timeline.</p>
+            <p>The question every organization must answer: Who wakes up at 3 AM worried about this project? That person should own it. If nobody wakes up worried, nobody cares enough to make it succeed.</p>
 
-            <p>For blast optimization, the COO has authority to change blast workflows across all sites. Blast engineers don't get to opt out, though they heavily influence how new workflows integrate with existing practices.</p>
+            <p>Northern Star's VP of Operations wakes up at 3 AM when equipment fails unexpectedly. That person should own predictive maintenance. The VP of Mining Operations wakes up when ore recovery is poor. They own blast optimization. The VP of Exploration wakes up when they can't develop profitable new sites. They own remote sites.</p>
 
-            <p>For remote sites, the CEO has authority to staff sites with AI-assisted operations. Site managers don't vote on whether to use AI. They help define what "AI-assisted" means in practice.</p>
+            <p>Ownership follows worry. Accountability follows consequences.</p>
 
-            <p>Authority matches accountability. The person responsible for outcomes has power to make decisions that affect those outcomes.</p>
+            <p>Most AI projects have owners who don't worry because failure doesn't affect them personally. The project manager coordinates, but their career doesn't depend on whether this works. The steering committee oversees, but their bonuses aren't tied to outcomes. The technology team builds, but they measure success by delivering code, not by operational impact.</p>
 
-            <p>When there's conflict—competing priorities, resource constraints, political resistance—the sponsor decides. Fast. Not after three committee meetings. In days.</p>
+            <p>Nobody loses sleep. So nobody makes the hard calls. The project drifts. It becomes Dr. Strangebot. And everyone involved points to someone else when asked why it failed.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">AI Needs Different Skills. Create Roles and Pay for Them.</h2>
+            <p>Clear ownership means one person can't sleep if this isn't working. One person whose career, compensation, and reputation depend on outcomes. One person who has authority to make it work and accountability when it doesn't.</p>
 
-            <p>Here's what Northern Star learned: AI initiatives need hybrid roles that don't fit traditional job descriptions or pay bands.</p>
+            <p>That's uncomfortable. It's also the only way accountability works.</p>
 
-            <p>They need maintenance supervisors who understand both equipment and AI systems. Those people are worth more than supervisors who only know equipment. They need data engineers who understand mining operations, not just algorithms. Those people are worth more than data engineers who only know code. They need blast engineers who can work with AI recommendations and translate them for teams. Those people are worth more than blast engineers who only know explosives.</p>
+            <p>Organizations that refuse to assign clear ownership with skin in the game shouldn't build AI. They're not serious enough to succeed. They'll spend money, build technology, and wonder why nothing delivers value.</p>
 
-            <p>Northern Star created new roles with new compensation structures. "AI-enabled maintenance supervisor" gets roughly 15% pay premium over standard supervisor. "Operations data engineer" gets roughly 20% pay premium over standard data engineer. "AI-assisted blast engineer" gets roughly 12% pay premium over standard blast engineer.</p>
+            <p>The answer: because nobody was responsible for delivering value. They were responsible for building technology, coordinating work, or providing oversight. But not for outcomes.</p>
 
-            <p>These hybrid roles get career paths distinct from traditional roles. There's a future in being the person who bridges AI and operations. Northern Star wants those people to stay, not leave for companies that value that hybrid skillset.</p>
+            <p>Outcomes require ownership. Real ownership. The kind where one person's career depends on whether this works.</p>
 
-            <p>Most companies resist this. They try to fit AI roles into existing pay bands. Then wonder why they can't hire or retain the people they need.</p>
+            <p>Dr. Strangebot loves organizations with diffused responsibility. He feeds on steering committees and cross-functional coordination. He thrives when nobody owns outcomes.</p>
 
-            <p>If you're serious about AI, create career paths and compensation for AI-adjacent roles. Budget for it. Or accept that your AI initiatives will be perpetually understaffed with people who don't quite fit.</p>
+            <p>The antidote: one throat to choke. One person who can't point to someone else when it fails. One person whose authority matches their accountability.</p>
 
-            <h2 className="text-2xl font-semibold mt-16 mb-8 text-black">The Accountability Test</h2>
-
-            <p>How do you know if accountability is real at Northern Star?</p>
-
-            <p>Ask: Who owns the outcome if predictive maintenance fails? Answer: VP of Operations. One name. One person. Not "the team." Not "IT and Operations jointly."</p>
-
-            <p>Ask: What happens to him if it fails? Answer: His bonus drops 30%. His performance review reflects failure. His reputation takes a hit. His next promotion opportunity disappears. Real consequences.</p>
-
-            <p>Ask: What authority does he have? Answer: He can mandate deployment timelines, reallocate resources from other operations projects, override site manager resistance, change workflows. Real authority.</p>
-
-            <p>Ask: What's his time commitment? Answer: Monthly working sessions, weekly updates during critical phases, immediate availability for major obstacles. Real engagement.</p>
-
-            <p>When predictive maintenance hits an obstacle—maintenance teams at Site 7 resist adoption—what happens? The VP talks to Site 7 manager directly within two days. Understands the resistance. Makes a decision within three days. Adoption happens with adjustments based on feedback, but adoption happens. That's accountability.</p>
-
-            <p>Sponsorship determines if obstacles get removed. Team structure determines if work gets done. Authority determines if decisions get made. Compensation determines if your best people focus and stay.</p>
-
-            <p>Get all four right, and you have a chance. Get three right, and you drift. Get two right, and you're building Dr. Strangebot.</p>
-
-            <p>Who owns success? Not in theory. In practice. With consequences. With authority. With focus.</p>
-
-            <p>If you can't answer clearly, don't start.</p>
-
-            <p>You've assigned ownership. Northern Star knows who bleeds if these projects fail. Now they need to prepare the foundation. And the foundation is always data.</p>
+            <p>You know who's responsible. Now the harder question: Are you actually ready to build this?</p>
 
           </div>
 
@@ -163,6 +149,35 @@ export default function Decision4Page() {
           </div>
 
         </div>
+
+        {/* Footer */}
+        <footer className="mt-12 pt-12 border-t-2 border-gray-300 px-8">
+          <div className="flex justify-center items-center gap-2 text-sm mb-6">
+            <Link href="/about" className="text-blue-600 hover:underline">
+              About
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/speaking" className="text-blue-600 hover:underline">
+              Speaking
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/disclaimer" className="text-blue-600 hover:underline">
+              Disclaimer
+            </Link>
+            <span className="text-gray-400">•</span>
+            <a 
+              href="https://linkedin.com/in/poojary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <p className="text-center text-gray-600 text-sm pb-12">
+            © 2025 Virapo Limited
+          </p>
+        </footer>
 
       </div>
     </div>

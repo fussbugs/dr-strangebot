@@ -144,6 +144,35 @@ export default function Decision1Page() {
 
         </div>
 
+        {/* Footer */}
+        <footer className="mt-12 pt-12 border-t-2 border-gray-300 px-8">
+          <div className="flex justify-center items-center gap-2 text-sm mb-6">
+            <Link href="/about" className="text-blue-600 hover:underline">
+              About
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/speaking" className="text-blue-600 hover:underline">
+              Speaking
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/disclaimer" className="text-blue-600 hover:underline">
+              Disclaimer
+            </Link>
+            <span className="text-gray-400">•</span>
+            <a 
+              href="https://linkedin.com/in/poojary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <p className="text-center text-gray-600 text-sm pb-12">
+            © 2025 Virapo Limited
+          </p>
+        </footer>
+
       </div>
     </div>
   );

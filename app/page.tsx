@@ -127,17 +127,32 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-16 pt-8 border-t border-gray-200 text-center text-sm">
-          <div className="mb-3">
-            <Link href="/about" className="text-blue-600 hover:underline">About</Link>
-            <span className="text-gray-400 mx-2">•</span>
-            <Link href="/speaking" className="text-blue-600 hover:underline">Speaking</Link>
-            <span className="text-gray-400 mx-2">•</span>
-            <a href="https://linkedin.com/in/poojary" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        <footer className="mt-20 pt-12 border-t-2 border-gray-300">
+          <div className="flex justify-center items-center gap-2 text-sm mb-6">
+            <Link href="/about" className="text-blue-600 hover:underline">
+              About
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/speaking" className="text-blue-600 hover:underline">
+              Speaking
+            </Link>
+            <span className="text-gray-400">•</span>
+            <Link href="/disclaimer" className="text-blue-600 hover:underline">
+              Disclaimer
+            </Link>
+            <span className="text-gray-400">•</span>
+            <a 
+              href="https://linkedin.com/in/poojary" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
               LinkedIn
             </a>
           </div>
-          <p className="text-gray-600">© 2025 Vinay Poojary</p>
+          <p className="text-center text-gray-600 text-sm pb-12">
+            © 2025 Virapo Limited
+          </p>
         </footer>
 
       </main>
