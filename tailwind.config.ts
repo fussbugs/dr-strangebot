@@ -9,19 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Network State colors: Black, White, Blue
-        background: "#FFFFFF",
-        foreground: "#000000",
-        primary: "#0000FF",
-        border: "#E5E5E5",
+        "bg-base": "#07070f",
+        "bg-surface": "#0c0c1a",
+        "bg-elevated": "#101028",
+        "accent-violet": "#8b80f9",
+        "accent-gold": "#f0b429",
       },
       fontFamily: {
         sans: [
+          'var(--font-geist-sans)',
           '-apple-system',
           'BlinkMacSystemFont',
-          'system-ui',
           'Segoe UI',
           'sans-serif',
+        ],
+        mono: [
+          'var(--font-geist-mono)',
+          'monospace',
         ],
       },
     },

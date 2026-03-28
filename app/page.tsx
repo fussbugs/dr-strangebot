@@ -1,160 +1,334 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+const chapters = [
+  { num: '00', label: 'Prologue', title: 'Dr. Strangebot', href: '/prologue' },
+  { num: '01', label: 'Decision 1', title: 'What Are You Building and Why?', href: '/decision-1' },
+  { num: '02', label: 'Decision 2', title: 'What Dies to Fund This?', href: '/decision-2' },
+  { num: '03', label: 'Decision 3', title: "Can You Prove It's Worth It?", href: '/decision-3' },
+  { num: '04', label: 'Decision 4', title: "Who's Responsible?", href: '/decision-4' },
+  { num: '05', label: 'Decision 5', title: 'Are You Ready to Build?', href: '/decision-5' },
+  { num: '06', label: 'Decision 6', title: 'Will It Work in Reality?', href: '/decision-6' },
+  { num: '07', label: 'Epilogue', title: 'What Happens Next', href: '/what-next' },
+];
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <main className="max-w-3xl mx-auto px-8 py-12">
-        
-        {/* Header Section with Icon - Left Aligned */}
-        <div className="mb-12 pb-8 border-b border-gray-300">
-          <div className="flex items-center gap-3 mb-2">
-            <Link href="/" className="hover:opacity-70 transition-opacity">
-              <Image
-                src="/icons/robot.svg"
-                alt="Home"
-                width={65}
-                height={65}
-              />
-            </Link>
-            <h1 className="text-xl font-bold text-black">
-              Dr. Strangebot
-            </h1>
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'var(--bg-base)',
+        position: 'relative',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Ambient background glow */}
+      <div
+        style={{
+          position: 'absolute',
+          top: '8%',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '900px',
+          height: '700px',
+          background:
+            'radial-gradient(ellipse at center, rgba(139, 128, 249, 0.07) 0%, transparent 65%)',
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      />
+
+      <main
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          maxWidth: '780px',
+          margin: '0 auto',
+          padding: '5rem 2rem',
+        }}
+      >
+        {/* Brand mark */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.875rem',
+            marginBottom: '4rem',
+          }}
+        >
+          <div
+            style={{
+              width: '48px',
+              height: '48px',
+              background: 'var(--accent-violet-dim)',
+              borderRadius: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              border: '1px solid var(--border)',
+              boxShadow: '0 0 30px rgba(139, 128, 249, 0.15)',
+              flexShrink: 0,
+            }}
+          >
+            <Image
+              src="/icons/robot.svg"
+              alt="Dr. Strangebot"
+              width={28}
+              height={28}
+            />
           </div>
+          <span
+            style={{
+              color: 'var(--text-muted)',
+              fontSize: '0.7rem',
+              letterSpacing: '0.18em',
+              fontWeight: 600,
+              fontFamily: 'var(--font-geist-mono)',
+            }}
+          >
+            VIRAPO LIMITED
+          </span>
+        </div>
 
-          <p className="text-gray-600 mb-2">
-            How to Build AI That Works (or Admit It Doesn't)
+        {/* Title block */}
+        <div style={{ marginBottom: '4rem' }}>
+          <h1
+            style={{
+              fontSize: 'clamp(3rem, 7vw, 5.25rem)',
+              fontWeight: 900,
+              lineHeight: 1.05,
+              letterSpacing: '-0.03em',
+              background:
+                'linear-gradient(135deg, #ffffff 0%, #c4bdff 40%, #8b80f9 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              marginBottom: '1.25rem',
+            }}
+          >
+            Dr. Strangebot
+          </h1>
+
+          <p
+            style={{
+              color: 'var(--accent-gold)',
+              fontSize: '1.1rem',
+              fontWeight: 500,
+              marginBottom: '0.625rem',
+            }}
+          >
+            How to Build AI That Works (or Admit It Doesn&apos;t)
           </p>
 
-          <p className="text-gray-600 text-sm mb-6">
-            by <span className="font-bold">Vinay Poojary</span>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            by{' '}
+            <span
+              style={{ color: 'var(--text-primary)', fontWeight: 600 }}
+            >
+              Vinay Poojary
+            </span>
           </p>
+        </div>
 
-          <div className="mb-4">
-            <Link href="/prologue">
+        {/* Hero: Book cover + Description */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'auto 1fr',
+            gap: '3rem',
+            alignItems: 'start',
+            marginBottom: '5rem',
+          }}
+        >
+          <Link href="/prologue" style={{ display: 'block', flexShrink: 0 }}>
+            <div
+              style={{
+                borderRadius: '14px',
+                overflow: 'hidden',
+                boxShadow:
+                  '0 0 60px rgba(139, 128, 249, 0.2), 0 25px 70px rgba(0,0,0,0.7)',
+                border: '1px solid var(--border)',
+              }}
+            >
               <Image
                 src="/Dr Strangebot.png"
-                alt="Dr. Strangebot"
+                alt="Dr. Strangebot Book Cover"
                 width={180}
                 height={180}
                 priority
+                style={{ display: 'block' }}
               />
+            </div>
+          </Link>
+
+          <div>
+            <p
+              style={{
+                color: 'var(--text-body)',
+                lineHeight: 1.85,
+                fontSize: '1.05rem',
+                marginBottom: '2rem',
+              }}
+            >
+              Companies fund AI projects that become zombies—alive, consuming
+              resources and delivering nothing. This book captures six
+              decisions which separate projects that succeed from those that
+              fail.
+            </p>
+
+            <Link
+              href="/prologue"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                background: 'var(--accent-violet)',
+                color: '#fff',
+                padding: '0.75rem 1.625rem',
+                borderRadius: '8px',
+                fontWeight: 600,
+                fontSize: '0.9rem',
+                textDecoration: 'none',
+                boxShadow: '0 4px 20px rgba(139, 128, 249, 0.3)',
+              }}
+            >
+              Start Reading →
             </Link>
           </div>
         </div>
 
-        {/* Description */}
-        <div className="mb-12">
-          <h2 className="text-xl font-bold mb-4 text-black">Description</h2>
-          <p className="text-base text-gray-800 leading-relaxed">
-            Companies fund AI projects that become zombies—alive, consuming resources and delivering nothing. 
-            This book captures six decisions which separate projects that succeed from those that fail.
-          </p>
-        </div>
-
-        {/* TOC */}
-        <div className="space-y-6">
-          
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/prologue" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Prologue
-            </Link>
-            <Link href="/prologue" className="text-blue-600 hover:underline block ml-4">
-              → Dr. Strangebot
-            </Link>
+        {/* Table of Contents */}
+        <div style={{ marginBottom: '5rem' }}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              marginBottom: '1.25rem',
+            }}
+          >
+            <span
+              style={{
+                fontSize: '0.6rem',
+                fontWeight: 700,
+                letterSpacing: '0.22em',
+                color: 'var(--text-muted)',
+                fontFamily: 'var(--font-geist-mono)',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              TABLE OF CONTENTS
+            </span>
+            <div
+              style={{
+                flex: 1,
+                height: '1px',
+                background: 'var(--border-dim)',
+              }}
+            />
           </div>
 
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-1" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 1
-            </Link>
-            <Link href="/decision-1" className="text-blue-600 hover:underline block ml-4">
-              → What Are You Building and Why?
-            </Link>
+          <div
+            style={{ display: 'flex', flexDirection: 'column', gap: '0.375rem' }}
+          >
+            {chapters.map((ch) => (
+              <Link key={ch.href} href={ch.href} className="toc-card">
+                <span
+                  style={{
+                    fontSize: '1.3rem',
+                    fontWeight: 800,
+                    color: 'var(--text-muted)',
+                    fontFamily: 'var(--font-geist-mono)',
+                    minWidth: '2.75rem',
+                    letterSpacing: '-0.03em',
+                    lineHeight: 1,
+                  }}
+                >
+                  {ch.num}
+                </span>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div
+                    style={{
+                      fontSize: '0.6rem',
+                      fontWeight: 700,
+                      letterSpacing: '0.18em',
+                      color: 'var(--accent-violet)',
+                      marginBottom: '0.2rem',
+                      fontFamily: 'var(--font-geist-mono)',
+                    }}
+                  >
+                    {ch.label.toUpperCase()}
+                  </div>
+                  <div
+                    style={{
+                      color: 'var(--text-primary)',
+                      fontWeight: 500,
+                      fontSize: '0.975rem',
+                      lineHeight: 1.35,
+                    }}
+                  >
+                    {ch.title}
+                  </div>
+                </div>
+                <span
+                  style={{
+                    color: 'var(--text-muted)',
+                    fontSize: '0.875rem',
+                    flexShrink: 0,
+                  }}
+                >
+                  →
+                </span>
+              </Link>
+            ))}
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-2" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 2
-            </Link>
-            <Link href="/decision-2" className="text-blue-600 hover:underline block ml-4">
-              → What Dies to Fund This?
-            </Link>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-3" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 3
-            </Link>
-            <Link href="/decision-3" className="text-blue-600 hover:underline block ml-4">
-              → Can You Prove It's Worth It?
-            </Link>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-4" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 4
-            </Link>
-            <Link href="/decision-4" className="text-blue-600 hover:underline block ml-4">
-              → Who's Responsible?
-            </Link>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-5" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 5
-            </Link>
-            <Link href="/decision-5" className="text-blue-600 hover:underline block ml-4">
-              → Are You Ready to Build?
-            </Link>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <Link href="/decision-6" className="text-blue-600 hover:underline font-bold block mb-2">
-              → Decision 6
-            </Link>
-            <Link href="/decision-6" className="text-blue-600 hover:underline block ml-4">
-              → Will It Work in Reality?
-            </Link>
-          </div>
-
-          <div className="pb-4">
-            <Link href="/what-next" className="text-blue-600 hover:underline font-bold block">
-              → What Happens Next
-            </Link>
-          </div>
-
         </div>
 
         {/* Footer */}
-        <footer className="mt-20 pt-12 border-t-2 border-gray-300">
-          <div className="flex justify-center items-center gap-2 text-sm mb-6">
-            <Link href="/about" className="text-blue-600 hover:underline">
+        <footer
+          style={{
+            paddingTop: '2rem',
+            borderTop: '1px solid var(--border-dim)',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: '2rem',
+              fontSize: '0.875rem',
+              marginBottom: '1rem',
+              flexWrap: 'wrap',
+            }}
+          >
+            <Link href="/about" style={{ color: 'var(--text-secondary)' }}>
               About
             </Link>
-            <span className="text-gray-400">•</span>
-            <Link href="/speaking" className="text-blue-600 hover:underline">
+            <Link href="/speaking" style={{ color: 'var(--text-secondary)' }}>
               Speaking
             </Link>
-            <span className="text-gray-400">•</span>
-            <Link href="/disclaimer" className="text-blue-600 hover:underline">
+            <Link href="/disclaimer" style={{ color: 'var(--text-secondary)' }}>
               Disclaimer
             </Link>
-            <span className="text-gray-400">•</span>
-            <a 
-              href="https://linkedin.com/in/poojary" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/poojary"
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              style={{ color: 'var(--text-secondary)' }}
             >
               LinkedIn
             </a>
           </div>
-          <p className="text-center text-gray-600 text-sm pb-12">
+          <p
+            style={{
+              textAlign: 'center',
+              color: 'var(--text-muted)',
+              fontSize: '0.8rem',
+            }}
+          >
             © 2025 Virapo Limited
           </p>
         </footer>
-
       </main>
     </div>
   );
