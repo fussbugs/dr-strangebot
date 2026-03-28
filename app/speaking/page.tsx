@@ -133,7 +133,7 @@ export default function SpeakingPage() {
                 }}
               >
                 <Image
-                  src="/vinay.jpg"
+                  src="/vinay_poojary_grayscale.jpg"
                   alt="Vinay Poojary"
                   width={140}
                   height={140}
