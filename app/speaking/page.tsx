@@ -132,13 +132,12 @@ export default function SpeakingPage() {
                   boxShadow: '0 0 32px rgba(139, 128, 249, 0.15)',
                 }}
               >
-                <Image
-                  src="/vinay_poojary_grayscale.jpg"
-                  alt="Vinay Poojary"
-                  width={140}
-                  height={140}
-                  style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'grayscale(20%)' }}
-                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/vinay_poojary_grayscale.jpg"
+                alt="Vinay Poojary"
+                style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'grayscale(20%)' }}
+              />
               </div>
             </div>
           </div>
