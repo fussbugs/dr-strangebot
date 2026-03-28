@@ -67,7 +67,7 @@ export default function DisclaimerPage() {
               fontWeight: 600,
             }}
           >
-            © 2025 Virapo Limited. All rights reserved.
+            © 2026 Virapo Limited. All rights reserved.
           </p>
 
           <p style={{ color: 'var(--text-body)', fontSize: '1rem', lineHeight: 1.85 }}>
@@ -127,7 +127,7 @@ export default function DisclaimerPage() {
             </a>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-            © 2025 Virapo Limited
+            © 2026 Virapo Limited
           </p>
         </div>
       </footer>

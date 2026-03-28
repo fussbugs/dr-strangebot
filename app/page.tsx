@@ -326,7 +326,7 @@ export default function Home() {
               fontSize: '0.8rem',
             }}
           >
-            © 2025 Virapo Limited
+            © 2026 Virapo Limited
           </p>
         </footer>
       </main>

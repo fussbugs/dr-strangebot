@@ -113,7 +113,7 @@ export default function BookLayout({
             </a>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
-            © 2025 Virapo Limited
+            © 2026 Virapo Limited
           </p>
         </div>
       </footer>
