@@ -48,9 +48,9 @@ export default function BookLayout({
             <Image
               src="/icons/robot.svg"
               alt=""
-              width={20}
-              height={20}
-              style={{ opacity: 0.6 }}
+              width={28}
+              height={28}
+              style={{ opacity: 0.75 }}
             />
             Dr. Strangebot
           </Link>
