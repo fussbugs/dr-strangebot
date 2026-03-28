@@ -70,7 +70,7 @@ export default function SpeakingPage() {
 
       <main style={{ maxWidth: '720px', margin: '0 auto', padding: '4rem 2rem 6rem' }}>
         {/* Page header */}
-        <div style={{ marginBottom: '3rem' }}>
+        <div style={{ marginBottom: '3.5rem' }}>
           <div
             style={{
               fontSize: '0.6rem',
@@ -90,33 +90,59 @@ export default function SpeakingPage() {
               lineHeight: 1.15,
               letterSpacing: '-0.025em',
               color: 'var(--text-primary)',
+              marginBottom: '2rem',
             }}
           >
             Speaking
           </h1>
+
+          {/* Bio with photo */}
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start' }}>
+            <div style={{ flex: 1 }}>
+              <p
+                style={{
+                  color: 'var(--text-body)',
+                  fontSize: '1.05rem',
+                  lineHeight: 1.9,
+                  marginBottom: '1.25rem',
+                }}
+              >
+                Vinay has led digital transformation and emerging technology deployments at scale across mining, healthcare, utilities, and telecommunications—working with executive leadership and Boards at global Fortune 100 enterprises.
+              </p>
+              <p
+                style={{
+                  color: 'var(--text-body)',
+                  fontSize: '1.05rem',
+                  lineHeight: 1.9,
+                }}
+              >
+                He speaks on what actually works when deploying AI, managing organizational change, and building technology initiatives that survive contact with operational reality.
+              </p>
+            </div>
+
+            {/* Headshot */}
+            <div style={{ flexShrink: 0 }}>
+              <div
+                style={{
+                  width: '140px',
+                  height: '140px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  border: '2px solid var(--border)',
+                  boxShadow: '0 0 32px rgba(139, 128, 249, 0.15)',
+                }}
+              >
+                <Image
+                  src="/vinay.jpg"
+                  alt="Vinay Poojary"
+                  width={140}
+                  height={140}
+                  style={{ objectFit: 'cover', width: '100%', height: '100%', filter: 'grayscale(20%)' }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
-        <p
-          style={{
-            color: 'var(--text-body)',
-            fontSize: '1.05rem',
-            lineHeight: 1.9,
-            marginBottom: '1.5rem',
-          }}
-        >
-          Vinay has led digital transformation and emerging technology deployments at scale across mining, healthcare, utilities, and telecommunications—working with executive leadership and Boards at global Fortune 100 enterprises.
-        </p>
-
-        <p
-          style={{
-            color: 'var(--text-body)',
-            fontSize: '1.05rem',
-            lineHeight: 1.9,
-            marginBottom: '3.5rem',
-          }}
-        >
-          He speaks on what actually works when deploying AI, managing organizational change, and building technology initiatives that survive contact with operational reality.
-        </p>
 
         {/* Topics */}
         <div style={{ marginBottom: '4rem' }}>
