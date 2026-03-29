@@ -24,7 +24,7 @@ export default function AboutPage() {
               textDecoration: 'none',
             }}
           >
-            <Image src="/icons/robot.svg" alt="" width={18} height={18} style={{ opacity: 0.6 }} />
+            <Image src="/icons/robot.svg" alt="" width={28} height={28} style={{ opacity: 0.75 }} />
             Dr. Strangebot
           </Link>
         </div>
