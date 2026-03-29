@@ -107,7 +107,7 @@ export default function SpeakingPage() {
                   marginBottom: '1.25rem',
                 }}
               >
-                Vinay has led digital transformation and emerging technology deployments at scale across mining, healthcare, utilities, and telecommunications—working with executive leadership and Boards at global Fortune 100 enterprises.
+                Vinay Poojary has spent his career inside the most complex transformation programs in the world — partnering with Boards and C-suites at global Fortune 100 enterprises across healthcare, mining, utilities, and telecommunications.
               </p>
               <p
                 style={{
@@ -116,7 +116,7 @@ export default function SpeakingPage() {
                   lineHeight: 1.9,
                 }}
               >
-                He speaks on what actually works when deploying AI, managing organizational change, and building technology initiatives that survive contact with operational reality.
+                He speaks from hard-won experience, not theory — on leading large-scale enterprise change, building the people and organizational systems that sustain transformation, navigating the intersection of technology and human complexity, and what it genuinely takes to make ambitious initiatives succeed in organizations where the stakes are real and the margin for failure is not.
               </p>
             </div>
 
