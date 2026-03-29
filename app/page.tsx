@@ -115,13 +115,11 @@ export default function Home() {
             {/* Author name — above title */}
             <p
               style={{
-                fontSize: '0.68rem',
-                fontWeight: 700,
-                letterSpacing: '0.28em',
-                color: 'var(--text-muted)',
-                fontFamily: 'var(--font-geist-mono)',
+                fontSize: '0.9rem',
+                fontWeight: 500,
+                letterSpacing: '0.12em',
+                color: 'var(--text-secondary)',
                 marginBottom: '1.75rem',
-                textTransform: 'uppercase',
               }}
             >
               Vinay Poojary
@@ -148,19 +146,17 @@ export default function Home() {
             {/* Subtitle */}
             <p
               style={{
-                fontSize: '1.1rem',
-                fontStyle: 'italic',
-                fontWeight: 400,
-                color: 'var(--accent-gold)',
-                lineHeight: 1.6,
+                fontSize: '1.25rem',
+                fontWeight: 300,
+                color: 'var(--text-body)',
+                lineHeight: 1.5,
                 marginBottom: '2.25rem',
-                letterSpacing: '0.01em',
+                letterSpacing: '0.02em',
               }}
             >
               How to Build AI That Works
-              <br />
-              <span style={{ opacity: 0.65, fontSize: '1rem' }}>
-                (or Admit It Doesn&apos;t)
+              <span style={{ color: 'var(--text-secondary)', fontWeight: 300 }}>
+                {' '}— or Admit It Doesn&apos;t
               </span>
             </p>
 
