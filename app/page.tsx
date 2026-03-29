@@ -130,19 +130,6 @@ export default function Home() {
               Dr.<br />Strangebot
             </h1>
 
-            {/* Author attribution */}
-            <p
-              style={{
-                fontSize: '1rem',
-                fontWeight: 600,
-                color: '#dde1f5',
-                marginBottom: '2rem',
-                letterSpacing: '0.02em',
-              }}
-            >
-              by Vinay Poojary
-            </p>
-
             {/* Subtitle */}
             <p
               style={{
@@ -158,6 +145,19 @@ export default function Home() {
               <span style={{ color: 'var(--text-secondary)', fontWeight: 300 }}>
                 {' '}— or Admit It Doesn&apos;t
               </span>
+            </p>
+
+            {/* Author attribution */}
+            <p
+              style={{
+                fontSize: '1rem',
+                fontWeight: 600,
+                color: '#dde1f5',
+                marginBottom: '2.25rem',
+                letterSpacing: '0.02em',
+              }}
+            >
+              by Vinay Poojary
             </p>
 
             {/* Description */}
