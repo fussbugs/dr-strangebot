@@ -112,19 +112,6 @@ export default function Home() {
 
           {/* Title block */}
           <div>
-            {/* Author name — above title */}
-            <p
-              style={{
-                fontSize: '1rem',
-                fontWeight: 600,
-                letterSpacing: '0.08em',
-                color: '#dde1f5',
-                marginBottom: '1.75rem',
-              }}
-            >
-              Vinay Poojary
-            </p>
-
             {/* Title */}
             <h1
               style={{
@@ -142,6 +129,19 @@ export default function Home() {
             >
               Dr.<br />Strangebot
             </h1>
+
+            {/* Author attribution */}
+            <p
+              style={{
+                fontSize: '1rem',
+                fontWeight: 600,
+                color: '#dde1f5',
+                marginBottom: '2rem',
+                letterSpacing: '0.02em',
+              }}
+            >
+              by Vinay Poojary
+            </p>
 
             {/* Subtitle */}
             <p
