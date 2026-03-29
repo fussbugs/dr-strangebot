@@ -14,6 +14,14 @@ const topics = [
     title: 'Leading Change When Nobody Wants to Change',
     body: 'Managing organizational resistance, political dynamics, and stakeholder conflicts during large-scale technology rollouts. Practical approaches from deploying systems across continents and cultures.',
   },
+  {
+    title: 'Building the People Stack for an AI-First Organization',
+    body: 'Who you hire has changed. How you train has changed. What you pay for, and why, has changed. Most enterprises are still running AI on top of job architectures, compensation models, and performance systems built for a pre-AI world — and wondering why the technology isn\'t delivering.',
+  },
+  {
+    title: 'The Innovation Stack: Reimagining Creative Work in a Post-AI Enterprise',
+    body: 'Every AI business case promises the same thing — free your people from the routine so they can do higher-order work. Almost no organization has figured out what that actually means or how to build for it. Creative thinking doesn\'t happen because you cleared someone\'s calendar. It requires different conditions, different incentives, and different leadership behaviors than the ones that made your operation run efficiently in the first place.',
+  },
 ];
 
 const engagements = [
