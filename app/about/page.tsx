@@ -72,7 +72,7 @@ export default function AboutPage() {
               lineHeight: 1.9,
             }}
           >
-            Vinay Poojary is a senior technology executive who has led digital transformation and AI strategy at global Fortune 100 enterprises across healthcare, mining, utilities, and telecommunications.
+            Vinay Poojary is a senior technology and organizational development executive who has led digital transformation, people, and AI strategy at global Fortune 100 enterprises across healthcare, mining, utilities, and telecommunications.
           </p>
 
           <p
@@ -82,7 +82,7 @@ export default function AboutPage() {
               lineHeight: 1.9,
             }}
           >
-            He has worked with Boards and executive leadership to build and scale technology initiatives at Vale, Oracle Cerner, PwC, Deloitte, and Aon—spanning operations across North America, Asia, and South America.
+            He has partnered with Boards and executive leadership to build and scale large-scale organizational initiatives at Vale, Oracle Cerner, PwC, Deloitte, and Aon — spanning operations across North America, Asia, and South America.
           </p>
 
           <p
@@ -92,7 +92,7 @@ export default function AboutPage() {
               lineHeight: 1.9,
             }}
           >
-            His work focuses on making transformation projects succeed in traditional organizations—and preventing the failures that happen despite having the right technology, the right talent, and executive support.
+            His work sits at the intersection of strategy, technology, and human systems — helping complex, traditional organizations absorb change, build lasting internal capability, and convert ambitious transformation agendas into enduring competitive advantage.
           </p>
         </div>
 
