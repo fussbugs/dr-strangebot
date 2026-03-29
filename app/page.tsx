@@ -115,10 +115,10 @@ export default function Home() {
             {/* Author name — above title */}
             <p
               style={{
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                letterSpacing: '0.12em',
-                color: 'var(--text-secondary)',
+                fontSize: '1rem',
+                fontWeight: 600,
+                letterSpacing: '0.08em',
+                color: '#dde1f5',
                 marginBottom: '1.75rem',
               }}
             >
