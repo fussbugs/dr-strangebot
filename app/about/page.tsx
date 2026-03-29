@@ -149,6 +149,7 @@ export default function AboutPage() {
           >
             <Link href="/about" style={{ color: 'var(--text-secondary)' }}>About</Link>
             <Link href="/speaking" style={{ color: 'var(--text-secondary)' }}>Speaking</Link>
+            <Link href="/newsletter" style={{ color: 'var(--text-secondary)' }}>Newsletter</Link>
             <Link href="/disclaimer" style={{ color: 'var(--text-secondary)' }}>Disclaimer</Link>
             <a
               href="https://linkedin.com/in/poojary"

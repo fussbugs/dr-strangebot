@@ -100,6 +100,9 @@ export default function BookLayout({
             <Link href="/speaking" style={{ color: 'var(--text-secondary)' }}>
               Speaking
             </Link>
+            <Link href="/newsletter" style={{ color: 'var(--text-secondary)' }}>
+              Newsletter
+            </Link>
             <Link href="/disclaimer" style={{ color: 'var(--text-secondary)' }}>
               Disclaimer
             </Link>
