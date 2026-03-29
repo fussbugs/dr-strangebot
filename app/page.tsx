@@ -22,17 +22,29 @@ export default function Home() {
         overflow: 'hidden',
       }}
     >
-      {/* Ambient background glow */}
+      {/* Ambient glows */}
       <div
         style={{
           position: 'absolute',
-          top: '8%',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: '900px',
+          top: '5%',
+          left: '-5%',
+          width: '700px',
           height: '700px',
           background:
-            'radial-gradient(ellipse at center, rgba(139, 128, 249, 0.07) 0%, transparent 65%)',
+            'radial-gradient(ellipse at center, rgba(139, 128, 249, 0.09) 0%, transparent 65%)',
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          top: '40%',
+          right: '-10%',
+          width: '500px',
+          height: '500px',
+          background:
+            'radial-gradient(ellipse at center, rgba(240, 180, 41, 0.04) 0%, transparent 65%)',
           pointerEvents: 'none',
           zIndex: 0,
         }}
@@ -42,169 +54,162 @@ export default function Home() {
         style={{
           position: 'relative',
           zIndex: 1,
-          maxWidth: '780px',
+          maxWidth: '1120px',
           margin: '0 auto',
-          padding: '5rem 2rem',
+          padding: '0 3rem',
         }}
       >
-        {/* Brand mark */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.875rem',
-            marginBottom: '4rem',
-          }}
-        >
+        {/* Top bar — robot icon only */}
+        <div style={{ padding: '2rem 0' }}>
           <div
             style={{
-              width: '48px',
-              height: '48px',
+              width: '42px',
+              height: '42px',
               background: 'var(--accent-violet-dim)',
-              borderRadius: '12px',
+              borderRadius: '10px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               border: '1px solid var(--border)',
-              boxShadow: '0 0 30px rgba(139, 128, 249, 0.15)',
-              flexShrink: 0,
+              boxShadow: '0 0 20px rgba(139, 128, 249, 0.12)',
             }}
           >
-            <Image
-              src="/icons/robot.svg"
-              alt="Dr. Strangebot"
-              width={28}
-              height={28}
-            />
+            <Image src="/icons/robot.svg" alt="Dr. Strangebot" width={24} height={24} />
           </div>
-          <span
-            style={{
-              color: 'var(--text-muted)',
-              fontSize: '0.7rem',
-              letterSpacing: '0.18em',
-              fontWeight: 600,
-              fontFamily: 'var(--font-geist-mono)',
-            }}
-          >
-            VIRAPO LIMITED
-          </span>
         </div>
 
-        {/* Title block */}
-        <div style={{ marginBottom: '4rem' }}>
-          <h1
-            style={{
-              fontSize: 'clamp(3rem, 7vw, 5.25rem)',
-              fontWeight: 900,
-              lineHeight: 1.05,
-              letterSpacing: '-0.03em',
-              background:
-                'linear-gradient(135deg, #ffffff 0%, #c4bdff 40%, #8b80f9 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              marginBottom: '1.25rem',
-            }}
-          >
-            Dr. Strangebot
-          </h1>
-
-          <p
-            style={{
-              color: 'var(--accent-gold)',
-              fontSize: '1.1rem',
-              fontWeight: 500,
-              marginBottom: '0.625rem',
-            }}
-          >
-            How to Build AI That Works (or Admit It Doesn&apos;t)
-          </p>
-
-          <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-            by{' '}
-            <span
-              style={{ color: 'var(--text-primary)', fontWeight: 600 }}
-            >
-              Vinay Poojary
-            </span>
-          </p>
-        </div>
-
-        {/* Hero: Book cover + Description */}
-        <div
+        {/* Hero — book cover + title side by side */}
+        <section
           style={{
             display: 'grid',
-            gridTemplateColumns: 'auto 1fr',
-            gap: '3rem',
-            alignItems: 'start',
-            marginBottom: '5rem',
+            gridTemplateColumns: 'min-content 1fr',
+            gap: '5rem',
+            alignItems: 'center',
+            padding: '4rem 0 7rem',
           }}
         >
+          {/* Book cover */}
           <Link href="/prologue" style={{ display: 'block', flexShrink: 0 }}>
             <div
               style={{
-                borderRadius: '14px',
+                borderRadius: '16px',
                 overflow: 'hidden',
                 boxShadow:
-                  '0 0 60px rgba(139, 128, 249, 0.2), 0 25px 70px rgba(0,0,0,0.7)',
+                  '0 0 80px rgba(139, 128, 249, 0.25), 0 40px 80px rgba(0,0,0,0.8)',
                 border: '1px solid var(--border)',
               }}
             >
               <Image
                 src="/Dr Strangebot.png"
                 alt="Dr. Strangebot Book Cover"
-                width={180}
-                height={180}
+                width={300}
+                height={300}
                 priority
                 style={{ display: 'block' }}
               />
             </div>
           </Link>
 
+          {/* Title block */}
           <div>
+            {/* Author name — above title */}
+            <p
+              style={{
+                fontSize: '0.68rem',
+                fontWeight: 700,
+                letterSpacing: '0.28em',
+                color: 'var(--text-muted)',
+                fontFamily: 'var(--font-geist-mono)',
+                marginBottom: '1.75rem',
+                textTransform: 'uppercase',
+              }}
+            >
+              Vinay Poojary
+            </p>
+
+            {/* Title */}
+            <h1
+              style={{
+                fontSize: 'clamp(4rem, 6.5vw, 6.5rem)',
+                fontWeight: 900,
+                lineHeight: 0.92,
+                letterSpacing: '-0.04em',
+                background:
+                  'linear-gradient(140deg, #ffffff 0%, #d4ceff 35%, #8b80f9 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                marginBottom: '1.75rem',
+              }}
+            >
+              Dr.<br />Strangebot
+            </h1>
+
+            {/* Subtitle */}
+            <p
+              style={{
+                fontSize: '1.1rem',
+                fontStyle: 'italic',
+                fontWeight: 400,
+                color: 'var(--accent-gold)',
+                lineHeight: 1.6,
+                marginBottom: '2.25rem',
+                letterSpacing: '0.01em',
+              }}
+            >
+              How to Build AI That Works
+              <br />
+              <span style={{ opacity: 0.65, fontSize: '1rem' }}>
+                (or Admit It Doesn&apos;t)
+              </span>
+            </p>
+
+            {/* Description */}
             <p
               style={{
                 color: 'var(--text-body)',
-                lineHeight: 1.85,
+                lineHeight: 1.9,
                 fontSize: '1.05rem',
-                marginBottom: '2rem',
+                marginBottom: '2.5rem',
+                maxWidth: '460px',
               }}
             >
               Companies fund AI projects that become zombies—alive, consuming
-              resources and delivering nothing. This book captures six
-              decisions which separate projects that succeed from those that
-              fail.
+              resources and delivering nothing. Six decisions separate projects
+              that succeed from those that fail.
             </p>
 
+            {/* CTA */}
             <Link
               href="/prologue"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.5rem',
+                gap: '0.625rem',
                 background: 'var(--accent-violet)',
                 color: '#fff',
-                padding: '0.75rem 1.625rem',
+                padding: '0.9rem 2.25rem',
                 borderRadius: '8px',
                 fontWeight: 600,
-                fontSize: '0.9rem',
+                fontSize: '0.95rem',
                 textDecoration: 'none',
-                boxShadow: '0 4px 20px rgba(139, 128, 249, 0.3)',
+                boxShadow: '0 4px 28px rgba(139, 128, 249, 0.4)',
+                letterSpacing: '0.01em',
               }}
             >
               Start Reading →
             </Link>
           </div>
-        </div>
+        </section>
 
         {/* Table of Contents */}
-        <div style={{ marginBottom: '5rem' }}>
+        <section style={{ paddingBottom: '6rem' }}>
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '1rem',
-              marginBottom: '1.25rem',
+              gap: '1.5rem',
+              marginBottom: '1.75rem',
             }}
           >
             <span
@@ -220,26 +225,26 @@ export default function Home() {
               TABLE OF CONTENTS
             </span>
             <div
-              style={{
-                flex: 1,
-                height: '1px',
-                background: 'var(--border-dim)',
-              }}
+              style={{ flex: 1, height: '1px', background: 'var(--border-dim)' }}
             />
           </div>
 
           <div
-            style={{ display: 'flex', flexDirection: 'column', gap: '0.375rem' }}
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(2, 1fr)',
+              gap: '0.375rem',
+            }}
           >
             {chapters.map((ch) => (
               <Link key={ch.href} href={ch.href} className="toc-card">
                 <span
                   style={{
-                    fontSize: '1.3rem',
+                    fontSize: '1.2rem',
                     fontWeight: 800,
                     color: 'var(--text-muted)',
                     fontFamily: 'var(--font-geist-mono)',
-                    minWidth: '2.75rem',
+                    minWidth: '2.5rem',
                     letterSpacing: '-0.03em',
                     lineHeight: 1,
                   }}
@@ -263,7 +268,7 @@ export default function Home() {
                     style={{
                       color: 'var(--text-primary)',
                       fontWeight: 500,
-                      fontSize: '0.975rem',
+                      fontSize: '0.925rem',
                       lineHeight: 1.35,
                     }}
                   >
@@ -282,52 +287,55 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </section>
 
         {/* Footer */}
         <footer
           style={{
             paddingTop: '2rem',
+            paddingBottom: '3rem',
             borderTop: '1px solid var(--border-dim)',
           }}
         >
           <div
             style={{
               display: 'flex',
-              justifyContent: 'center',
-              gap: '2rem',
-              fontSize: '0.875rem',
-              marginBottom: '1rem',
+              justifyContent: 'space-between',
+              alignItems: 'center',
               flexWrap: 'wrap',
+              gap: '1rem',
             }}
           >
-            <Link href="/about" style={{ color: 'var(--text-secondary)' }}>
-              About
-            </Link>
-            <Link href="/speaking" style={{ color: 'var(--text-secondary)' }}>
-              Speaking
-            </Link>
-            <Link href="/disclaimer" style={{ color: 'var(--text-secondary)' }}>
-              Disclaimer
-            </Link>
-            <a
-              href="https://linkedin.com/in/poojary"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'var(--text-secondary)' }}
+            <div
+              style={{
+                display: 'flex',
+                gap: '2rem',
+                fontSize: '0.875rem',
+                flexWrap: 'wrap',
+              }}
             >
-              LinkedIn
-            </a>
+              <Link href="/about" style={{ color: 'var(--text-secondary)' }}>
+                About
+              </Link>
+              <Link href="/speaking" style={{ color: 'var(--text-secondary)' }}>
+                Speaking
+              </Link>
+              <Link href="/disclaimer" style={{ color: 'var(--text-secondary)' }}>
+                Disclaimer
+              </Link>
+              <a
+                href="https://linkedin.com/in/poojary"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                LinkedIn
+              </a>
+            </div>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem' }}>
+              © 2026 Virapo Limited
+            </p>
           </div>
-          <p
-            style={{
-              textAlign: 'center',
-              color: 'var(--text-muted)',
-              fontSize: '0.8rem',
-            }}
-          >
-            © 2026 Virapo Limited
-          </p>
         </footer>
       </main>
     </div>
