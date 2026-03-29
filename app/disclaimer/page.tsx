@@ -71,11 +71,11 @@ export default function DisclaimerPage() {
           </p>
 
           <p style={{ color: 'var(--text-body)', fontSize: '1rem', lineHeight: 1.85 }}>
-            The content of this book, including all text, concepts, frameworks, and case studies, is proprietary material protected by copyright law. No part of this publication may be reproduced, distributed, or transmitted in any form without prior written permission.
+            The content of this book and website, including all text, concepts, frameworks, and case studies, is proprietary material protected by copyright law. No part of this publication may be reproduced, distributed, or transmitted in any form without prior written permission.
           </p>
 
           <p style={{ color: 'var(--text-body)', fontSize: '1rem', lineHeight: 1.85 }}>
-            The views, opinions, and recommendations expressed in this book are solely those of the author, Vinay Poojary, and do not reflect the views of any employer, past or present, including Vale, Oracle Cerner, PwC, Deloitte, or Aon.
+            The views, opinions, and recommendations expressed in this book and website are solely those of the author, Vinay Poojary, and do not reflect the views of any employer, past or present.
           </p>
 
           <p style={{ color: 'var(--text-body)', fontSize: '1rem', lineHeight: 1.85 }}>
