@@ -14,18 +14,6 @@ const topics = [
     title: 'Leading Change When Nobody Wants to Change',
     body: 'Managing organizational resistance, political dynamics, and stakeholder conflicts during large-scale technology rollouts. Practical approaches from deploying systems across continents and cultures.',
   },
-  {
-    title: 'Building Technology That Works in Production',
-    body: 'The gap between proof-of-concept and production deployment—and how to design for operational reality, not lab conditions. Based on scaling technology initiatives across North America, Asia, and South America.',
-  },
-  {
-    title: 'Resource Allocation: What to Kill to Fund What Matters',
-    body: "How executives make hard decisions about stopping projects, reallocating resources, and admitting when initiatives aren't working—before they become expensive failures.",
-  },
-  {
-    title: 'High-Stakes Technology Deployments',
-    body: 'Leading implementations where failure has significant operational, financial, or safety consequences. Lessons from deploying mission-critical systems in 24/7 industrial operations.',
-  },
 ];
 
 const engagements = [
