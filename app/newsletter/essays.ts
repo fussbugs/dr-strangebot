@@ -2,6 +2,8 @@ export type Essay = {
   slug: string;
   title: string;
   date: string;
+  image?: string; // optional: path to image in /public, e.g. '/essay-execution.png'
+  imageAlt?: string;
   body: string[];
 };
 
@@ -10,6 +12,8 @@ export const essays: Essay[] = [
     slug: 'the-execution-was-never-the-point',
     title: 'The Execution Was Never The Point.',
     date: 'March 2026',
+    image: '/essay-execution.png',
+    imageAlt: 'Stick figure saying "I do Thinking Work." with an arrow pointing back labelled "Actually: Formatting PDFs."',
     body: [
       'Here\'s the thing nobody seems willing to say directly: most knowledge work was never as complex as it looked.',
       'It felt complex. It required skill, time, experience. But a huge portion of what filled professional lives — the research, the drafting, the formatting, the summarizing, the endless churn of deliverables designed to demonstrate effort — was execution work. Dressed up as thinking work, sure, but execution nonetheless.',

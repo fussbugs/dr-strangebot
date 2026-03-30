@@ -80,6 +80,18 @@ export default async function EssayPage({ params }: { params: Promise<{ slug: st
         {/* Divider */}
         <div style={{ height: '1px', background: 'var(--border-dim)', marginBottom: '3rem' }} />
 
+        {/* Lead image */}
+        {essay.image && (
+          <div style={{ marginBottom: '2.5rem', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-dim)' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={essay.image}
+              alt={essay.imageAlt ?? ''}
+              style={{ display: 'block', width: '100%', height: 'auto' }}
+            />
+          </div>
+        )}
+
         {/* Essay body */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.75rem' }}>
           {essay.body.map((paragraph, i) => (
