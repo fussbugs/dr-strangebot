@@ -12,7 +12,7 @@ export const essays: Essay[] = [
     slug: 'the-execution-was-never-the-point',
     title: 'The Execution Was Never The Point.',
     date: 'March 2026',
-    image: '/essay-execution.png',
+    image: '/Execution_Never.png',
     imageAlt: 'Stick figure saying "I do Thinking Work." with an arrow pointing back labelled "Actually: Formatting PDFs."',
     body: [
       'Here\'s the thing nobody seems willing to say directly: most knowledge work was never as complex as it looked.',
