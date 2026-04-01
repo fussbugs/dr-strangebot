@@ -18,7 +18,7 @@ export default function BookLayout({
           top: 0,
           zIndex: 50,
           borderBottom: '1px solid var(--border-dim)',
-          background: 'rgba(7, 7, 15, 0.92)',
+          background: 'rgba(14, 17, 23, 0.92)',
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
         }}

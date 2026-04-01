@@ -4,20 +4,20 @@
 
 @layer base {
   :root {
-    --bg-base: #07070f;
-    --bg-surface: #0c0c1a;
-    --bg-elevated: #101028;
+    --bg-base: #0e1117;
+    --bg-surface: #151b27;
+    --bg-elevated: #1c2133;
     --accent-violet: #8b80f9;
-    --accent-violet-dim: rgba(139, 128, 249, 0.1);
+    --accent-violet-dim: rgba(139, 128, 249, 0.12);
     --accent-gold: #f0b429;
     --accent-gold-dim: rgba(240, 180, 41, 0.1);
-    --text-primary: #dde1f5;
+    --text-primary: #e8ecff;
     --text-body: #c4c9e4;
-    --text-secondary: #6b729a;
-    --text-muted: #3a4060;
-    --border-dim: #141438;
-    --border: #1e1e48;
-    --border-bright: #2a2a60;
+    --text-secondary: #7880a8;
+    --text-muted: #4a5278;
+    --border-dim: #1e2438;
+    --border: #28304e;
+    --border-bright: #363f62;
   }
 
   * {

@@ -31,7 +31,7 @@ export default function Home() {
           width: '700px',
           height: '700px',
           background:
-            'radial-gradient(ellipse at center, rgba(139, 128, 249, 0.09) 0%, transparent 65%)',
+            'radial-gradient(ellipse at center, rgba(139, 128, 249, 0.13) 0%, transparent 65%)',
           pointerEvents: 'none',
           zIndex: 0,
         }}
@@ -44,7 +44,7 @@ export default function Home() {
           width: '500px',
           height: '500px',
           background:
-            'radial-gradient(ellipse at center, rgba(240, 180, 41, 0.04) 0%, transparent 65%)',
+            'radial-gradient(ellipse at center, rgba(240, 180, 41, 0.06) 0%, transparent 65%)',
           pointerEvents: 'none',
           zIndex: 0,
         }}
