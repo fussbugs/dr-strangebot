@@ -103,7 +103,17 @@ export default function SpeakingPage() {
                   marginBottom: '1.25rem',
                 }}
               >
-                Vinay Poojary has spent his career inside the most complex transformation programs in the world — partnering with Boards and C-suites at global Fortune 100 enterprises across healthcare, mining, utilities, and telecommunications.
+                Vinay Poojary is a senior transformation executive who has led large-scale organizational and digital change at global Fortune 100 enterprises — and works with organizations navigating the deeper transition toward AI-first ways of operating, at enterprise and industrial scale.
+              </p>
+              <p
+                style={{
+                  color: 'var(--text-body)',
+                  fontSize: '1.05rem',
+                  lineHeight: 1.9,
+                  marginBottom: '1.25rem',
+                }}
+              >
+                At the heart of his work is a singular conviction: that the most consequential design challenge of our time is not building AI, but building the organizational conditions in which humans and machines can coexist and work together — with clarity, with purpose, and with each playing to their deepest strengths. He helps organizations design the operating models, human foundations, and talent stack that make that possible — and the governance structures that keep it all coherent.
               </p>
               <p
                 style={{
@@ -112,7 +122,7 @@ export default function SpeakingPage() {
                   lineHeight: 1.9,
                 }}
               >
-                He speaks from hard-won experience, not theory — on leading large-scale enterprise change, building the people and organizational systems that sustain transformation, navigating the intersection of technology and human complexity, and what it genuinely takes to make ambitious initiatives succeed in organizations where the stakes are real and the margin for failure is not.
+                He has partnered with Boards and executive leadership at Vale, Oracle Cerner, PwC, Deloitte, and Aon across North America, Asia, and South America — and speaks across the mining, energy, and industrial sectors on what it genuinely takes to lead change when the stakes are real.
               </p>
             </div>
 
